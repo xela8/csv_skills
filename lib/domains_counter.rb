@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
-require 'csv'
+
 
 class DomainsCounter
   def parse_file

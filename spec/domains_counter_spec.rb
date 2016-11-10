@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'domains_counter'
+require 'csv'
 
 describe DomainsCounter do
 
