@@ -2,7 +2,6 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 
-
 class DomainsCounter
   def parse_csv(file, column_num)
     domain_counts = Hash.new(0)
@@ -12,6 +11,8 @@ class DomainsCounter
 
     write_file(domain_counts)
   end
+
+  private
 
   def write_file(domain_counts)
     open('output.csv', 'w') { |f|
