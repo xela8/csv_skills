@@ -15,10 +15,10 @@ class DomainsCounter
   private
 
   def write_file(domain_counts)
-    open('output.csv', 'w') { |f|
+    open('output.csv', 'w') do |f|
       f << "domain,count\n"
       f << domain_counts.map{|domain, count| "#{domain},#{count}"}.join("\n")
-    }
+    end
   end
 
   def extract_domain(email)
